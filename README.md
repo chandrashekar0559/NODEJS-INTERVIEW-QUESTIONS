@@ -75,3 +75,191 @@ http://developmentr.com/javascript/2015/12/31/javascript-es6.html
 19) traingel , square , cirle , prime or not , fibanocci , assending , leapYearOrNot , dateFormat,  Quick sort, Merge sort , Heap sort ,Insertion sort , Bubble sort , factorial , find the unique elements from two arrays ,  to move an array element from one position to another , to check whether an `input` is an array or not , o join all elements of the following array into a string , to find the most frequent item of an array ,  to remove duplicate items from an array  , to perform a binary search , to compute the sum of each individual index value from the given arrays ,to find the difference of two arrays , to find the longest common starting substring in a set of strings , reverse a number & String , string is palindrome or not , Asending order and Desending order , first letter of each word of the string in upper case , Find the longest word within the string ,counts the number of vowels within the string , ake an array of numbers stored and find the second lowest and second greatest numbers , to find 1st January is being a Sunday between 2014 and 2050 , to get the extension of a filename , to replace every character in a given string with the character following it in the alphabet ,  to convert the letters of a given string in alphabetical order , to count the number of vowels in a given string. , to find the number of even digits in a given integer ,to convert a decimal number to binary, hexadecimal or octal number , to find the highest & lowest value in an array , to check to check whether a variable is numeric or not , 
 
 
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            In  console
+            <input type="date" name="bday"> 
+        </div>
+        <script type="text/javascript">
+            //================= 1) - area of Tiangle +++++++++++Foramulaee = half-traingle = ((side1 side2 + side3)/2 ) , 
+            //Trangle = Math.sqrt(half-traingle * ((half-traingle - side1) * (half-traingle - side2) * (half-traingle - side3)));
+            function areaOfTriangle(a, b, c) {
+                var side1 = a;
+                var side2 = b;
+                var side3 = c;
+                var perimeter = (side1 + side2 + side3) / 2;
+                var area = Math.sqrt(perimeter * ((perimeter - side1) * (perimeter - side2) * (perimeter - side3)));
+                console.log(area);
+            };
+         //================== 2)- area of Circle+++++++++++Foramulaee = area of circle = PI * R  * R , circumference of circle = 2 * PI * R ;
+            function areaAndCircumferenceOfCirecle(radius) {
+                var area = Math.PI * radius * radius;
+                var circumferance = 2 * Math.PI * radius
+                console.log(area + " -- " + circumferance)
+            };
+            //================= 3)- area of rectangle+++++++++Formulaee = area of rectangle = width * length
+            function areaRectangle(w,l){
+                var area= w * l ;
+                console.log(area);
+            };
+            //================= 4 )- prime or not+++++++ a positive integer which is only devisible by 1 
+            
+            function primeNumOrNoT(num){
+                if(num === 1){return false;}
+               else if(num === 2){return true;}
+               else {
+                  for(var x=2; x < num; x++ ){
+                      if(num % 2 === 0){return false}
+                  } 
+                  return true;
+               }
+            };
+            //================= 5 )- fibonaci series+++++++  the first two Fibonacci numbers are 0 and 1, and each subsequent number is the sum of the previous two.
+            // Its recurrence relation is given by Fn = Fn-1 + Fn-2.
+            
+            function fibonaciSeries(num){
+                var fibo = [];
+                 fibo[0] = 0;
+                 fibo[1] = 1;
+                for(var i=2; i<= num ; i++){
+                    fibo[i] = fibo[i-1] + fibo[i-2];
+                    console.log(fibo[i]);
+                }
+            };
+           ////================= 6 )- factorial ++++++ 
+           function factorial(num){
+                if(num === 0){ return 1}
+                return num * factorial(num - 1);
+                }
+           ////================= 7 )- PailndromeOrNot ++++++ 
+           function pailndromeOrNot(str){
+               var pail= str.split("").reverse().join("");
+               if(str == pail){return true}
+               return false;
+           }
+           ////================= 8 )- Asending and Desending Order ++++++ 
+            function asendingOrder(array1){
+              var asendingOrder = array1.sort(function(a,b){return a-b});
+   console.log(" --- asendingOrder --- " +asendingOrder );  
+            };
+             function desendingOrder(array1){
+    var desendingOrder = array1.sort(function(a,b){return b-a});
+   console.log(" --- desendingOrder --- " +desendingOrder );  
+            };
+            ////================= 9 )- leapYearOrNot ++++++  
+             function leapYearOrNot(year) {
+                x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+                console.log(x);
+            };
+            ////================= 10 )- dateFormat ++++++              
+             function dateFormat() {
+                var date = new Date();
+                console.log(date);
+                var yyyy = date.getFullYear();
+                var mm = date.getMonth();
+                var dd = date.getDate();
+                var day = date.getDay();
+                var weeks = ["Mon","Tue" ,"Wed","Thu","Fri","Sat"];
+                console.log(mm + "/" + dd + "/" + yyyy);
+                console.log("day -- "+weeks[day]);
+            };
+             ////================= 11 )- Find Unique num in two arrays ++++++              
+             function findUniqueValuesInArray(arr1, arr2){
+              let unique1 = arr1.filter((o) => arr2.indexOf(o)=== -1);
+              let unique2 = arr2.filter((o) => arr1.indexOf(o) === -1);
+              var unique = unique1.concat(unique2);
+              console.log(unique);
+             }
+            ////================= 12 )- to move an array element from one position to another ++++++      
+            function array_move(arr, old_index, new_index) {
+                if (new_index >= arr.length) {
+                    var k = new_index - arr.length + 1;
+                    while (k--) {
+                        arr.push(undefined);
+                    }
+                }
+                arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
+                return arr; 
+                };
+            ////================= 13 )- to check whether an `input` is an array or not ++++++      
+                 function isArray(arr1){
+                if(toString.call(arr1) === "[object Array]" ){return true}
+                return false;
+            };
+            ////================= 14 )- to join all elements of the following array into a string 
+           function toJoinArrayIntoString(arr1){
+                            var finalOutPut = arr1.toString();
+            var some = arr1.join("+");
+            console.log(some);
+                        }
+            ////================= 15 )-  to remove duplicate items from an array   eg:- console.log(new Set(arr1));           
+             function removeDuplicates(arr){
+                    let unique_array = []
+                    for(let i = 0;i < arr.length; i++){
+                        if(unique_array.indexOf(arr[i]) == -1){
+                            unique_array.push(arr[i])
+                        }
+                    }
+                    return unique_array
+                    };
+            //================= 16 )- Find 1st January is being a Sunday between 2014 and 2050.
+            function findFirstSunday(startYear, endYear) {
+                console.log('--------------------');
+                for (var year = startYear; year <= endYear; year++)
+                {
+                    var d = new Date(year, 0, 1);
+                    if (d.getDay() === 0)
+                        console.log("1st January is being a Sunday  " + year);
+                }
+                console.log('--------------------');
+            }              
+            //================= 17 )- reverse a number & String
+            function reverse(input){
+                var op = input.split("").reverse().join("");
+                console.log(op);
+            }
+            //================= 18 )- first letter of each word of the string in upper case
+            function uppercase(str) {
+                var array1 = str.split(' ');
+                var newarray1 = [];
+                for(var x = 0; x < array1.length; x++){
+                    newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+                }
+                return newarray1.join(' ');
+              }   
+             
+            document.writeln("<br/>navigator.appCodeName: " + navigator.appCodeName);
+            document.writeln("<br/>navigator.appName: " + navigator.appName);
+            document.writeln("<br/>navigator.appVersion: " + navigator.appVersion);
+            document.writeln("<br/>navigator.cookieEnabled: " + navigator.cookieEnabled);
+            document.writeln("<br/>navigator.language: " + navigator.language);
+            document.writeln("<br/>navigator.userAgent: " + navigator.userAgent);
+            document.writeln("<br/>navigator.platform: " + navigator.platform);
+            document.writeln("<br/>navigator.onLine: " + navigator.onLine);
+        
+        function strPostion() {
+                var arr1 = ["king", "queen", "minister", "quiz"];
+                var str = ""
+                for (i = 0; i <= arr1.length; i++) {
+                    console.log(arr1[i]);
+                    str = arr1[i]
+                    if (str.substring(0, 1) == "q") {
+                        console.log("---- " + str);
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>      
