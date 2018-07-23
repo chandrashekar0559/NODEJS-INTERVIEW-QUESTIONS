@@ -263,3 +263,56 @@ http://developmentr.com/javascript/2015/12/31/javascript-es6.html
         </script>
     </body>
 </html>      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mongodb, documents , difference b/w sql and non  sql , aggregation , sharding , replication , CRUD operations , why we use mongoose,
+what is the use of mongoose , Ad hoc queries , indexing , yield 
+
+https://www.mongodb.com/what-is-mongodb
+https://www.javatpoint.com/sql-vs-nosql
+https://docs.mongodb.com/manual/aggregation/
+https://docs.mongodb.com/manual/sharding/
+https://docs.mongodb.com/manual/replication/
+https://docs.mongodb.com/manual/crud/
+https://stackoverflow.com/questions/18531696/why-do-we-need-what-advantages-to-use-mongoose
+https://code.tutsplus.com/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527
+https://www.pcmag.com/encyclopedia/term/37486/ad-hoc-query
+https://stackoverflow.com/questions/6576664/nosql-adhoc-queries-millions-of-rows
+https://www.simplilearn.com/indexing-and-aggregation-mongodb-tutorial-video
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield
+
+
+angular2 , component and modules,template , Directives, dependecy injection ,
+routing , input and output , observers , how to pass the data in one component to another,
+lazyloading , forms using react.
+
+
+https://angular.io/docs
+https://www.tutorialspoint.com/angular2/angular2_components.htm
+https://www.tutorialspoint.com/angular2/angular2_modules.htm
+https://www.tutorialspoint.com/angular2/angular2_templates.htm
+https://www.tutorialspoint.com/angular2/angular2_directives.htm
+https://www.tutorialspoint.com/angular2/angular2_dependency_injection.htm
+https://scotch.io/tutorials/routing-angular-2-single-page-apps-with-the-component-router
+https://www.sitepoint.com/angular-2-components-inputs-outputs/
+https://angular-2-training-book.rangle.io/v/v2.3/handout/observables/using_observables.html
+https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/
+https://toddmotto.com/passing-data-angular-2-components-input
+https://stackoverflow.com/questions/34088209/how-to-pass-object-from-one-component-to-another-in-angular-2
+https://angular-2-training-book.rangle.io/v/v2.3/handout/modules/lazy-loading-module.html
+https://medium.com/aviabird/complete-angular2-guide-reactive-forms-in-depth-part-1-21a8e2428904
