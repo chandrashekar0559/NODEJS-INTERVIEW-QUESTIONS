@@ -260,6 +260,17 @@ http://developmentr.com/javascript/2015/12/31/javascript-es6.html
                     }
                 }
             }
+            const twoSum = (arr, target) => {
+  let results = [];
+  for (let i=0; i<arr.length; i++) {
+    for (let j=i+1; j<arr.length; j++) {
+      if (arr[j] === target - arr[i]) {
+        results.push([arr[i], arr[j]])
+      }
+    }
+  }
+  return results;
+}
         </script>
     </body>
 </html>      
