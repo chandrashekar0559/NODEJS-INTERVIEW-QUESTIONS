@@ -327,3 +327,7 @@ https://toddmotto.com/passing-data-angular-2-components-input
 https://stackoverflow.com/questions/34088209/how-to-pass-object-from-one-component-to-another-in-angular-2
 https://angular-2-training-book.rangle.io/v/v2.3/handout/modules/lazy-loading-module.html
 https://medium.com/aviabird/complete-angular2-guide-reactive-forms-in-depth-part-1-21a8e2428904
+
+
+
+https://github.com/sudheerj/reactjs-interview-questions
